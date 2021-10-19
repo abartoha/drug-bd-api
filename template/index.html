@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="favicon.gif" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="
+    Developer API for Bangladeshi Medicine Scene
+    ">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <title>DrugEx - MedEx CopyCat API</title>
+    <style>
+        body {
+            background-image: url('https://static.toiimg.com/photo/msid-74824961/74824961.jpg?219207');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .bg-white {
+            background: white;
+        }
+
+        .rounded-corners {
+            border-radius: 2em;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        code {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="section">
+        <div class="container hero-body bg-white rounded-corners m-5">
+            <h1 class="title text-center">
+                DrugEx
+            </h1>
+            <p class="subtitle text-center">
+                Real Bangladeshi Medicine API for developers
+            </p>
+            <p class="text-center">
+                Currently at version 1.0
+            </p>
+        </div>
+        <div class="container hero-body bg-white rounded-corners m-5">
+            <h2 class="title text-center">
+                Directions of Usage
+            </h2>
+            <p class="subtitle text-center">
+                This is a URL based API
+                <br>
+                Search by name <code><i>/api/v1/byName/:name</i></code>
+                <br>
+                Search by chemical name <code><i>/api/v1/byDrug/:drug</i></code>
+            </p>
+        </div>
+        <div class="container hero-body bg-white rounded-corners m-5">
+            <h2 class="title text-center">
+                Example
+            </h2>
+            <p class="subtitle text-center">
+                Given the <code>:name</code> is <strong>Famiclav</strong>
+                <br>
+                <code>
+                    [
+                        {
+                            "companyIndex": "3", 
+                            "companyName": "ACME Laboratories Ltd.", 
+                            "dose": "250mg+62.5mg", 
+                            "drug": "Cefuroxime Axetil + Clavulanic Acid", 
+                            "form": "Tablet", 
+                            "formIndex": "1", 
+                            "link": "https://medex.com.bd/brands/7417/famiclav-250mg", 
+                            "name": "Famiclav", 
+                            "strengthIndex": "250 mg+62.5 mg", 
+                            "unitPrice": "Unit Price:\u09f3 30.00(6's pack: \u09f3 180.00)"
+                        }, 
+                        {
+                            "companyIndex": "3", 
+                            "companyName": "ACME Laboratories Ltd.", 
+                            "dose": "500mg+125mg", 
+                            "drug": "Cefuroxime Axetil + Clavulanic Acid", 
+                            "form": "Tablet", 
+                            "formIndex": "1", 
+                            "link": "https://medex.com.bd/brands/7418/famiclav-500mg", 
+                            "name": "Famiclav", 
+                            "strengthIndex": "500 mg+125 mg", 
+                            "unitPrice": "Unit Price:\u09f3 50.00(6's pack: \u09f3 300.00)"
+                        }, 
+                        {
+                            "companyIndex": "3", 
+                            "companyName": "ACME Laboratories Ltd.", 
+                            "dose": "(125mg+31.25mg)/5ml", 
+                            "drug": "Cefuroxime Axetil + Clavulanic Acid", 
+                            "form": "PowderforSuspension", 
+                            "formIndex": "75", 
+                            "link": "https://medex.com.bd/brands/7419/famiclav-125mg", 
+                            "name": "Famiclav", 
+                            "strengthIndex": "(125 mg+31.25 mg)/5 ml", 
+                            "unitPrice": "70 ml bottle:\u09f3 252.00"
+                        }
+                        ]
+
+        </code>
+            </p>
+        </div>
+    </section>
+</body>
+
+</html>
